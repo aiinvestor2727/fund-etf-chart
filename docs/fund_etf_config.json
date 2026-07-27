@@ -1,0 +1,237 @@
+{
+  "output": "fund-etf-data.json",
+  "funds": [
+    {
+      "id": "emaxis-slim-sp500",
+      "name": "eMAXIS Slim 米国株式(S&P500)",
+      "company": "三菱UFJアセットマネジメント",
+      "provider": "mufg",
+      "fund_cd": "253266"
+    },
+    {
+      "id": "emaxis-slim-all-country",
+      "name": "eMAXIS Slim 全世界株式(オール・カントリー)",
+      "company": "三菱UFJアセットマネジメント",
+      "provider": "mufg",
+      "fund_cd": "253425"
+    },
+    {
+      "id": "ifree-next-fang-plus",
+      "name": "iFreeNEXT FANG+インデックス",
+      "company": "大和アセットマネジメント",
+      "provider": "daiwa",
+      "code": "3346"
+    },
+    {
+      "id": "ippo-us-tech-top20",
+      "name": "一歩先いく US テック・トップ20インデックス",
+      "company": "大和アセットマネジメント",
+      "provider": "daiwa",
+      "code": "4655"
+    },
+    {
+      "id": "ifreeplus-z-tech20",
+      "name": "iFreePlus 世界トレンド・テクノロジー株(Zテック20)",
+      "company": "大和アセットマネジメント",
+      "provider": "daiwa",
+      "code": "5139"
+    },
+    {
+      "id": "tracers-sp500-top10",
+      "name": "Tracers S&P500トップ10インデックス(米国株式)",
+      "company": "アモーヴァ・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "02312245"
+    },
+    {
+      "id": "nissay-mega10",
+      "name": "ニッセイ・S米国グロース株式メガ10インデックスファンド",
+      "company": "ニッセイアセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "2931225B"
+    },
+    {
+      "id": "smt-us-momentum",
+      "name": "SMT 米国株式モメンタムファンド",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "6431225C"
+    },
+    {
+      "id": "smt-magnificent-seven",
+      "name": "米国大型テクノロジー株式ファンド(マグニフィセント・セブン)",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "64312243"
+    },
+    {
+      "id": "mufg-fine-gold",
+      "name": "三菱UFJ 純金ファンド(ファインゴールド)",
+      "company": "三菱UFJアセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "03311112"
+    },
+    {
+      "id": "nissay-sox",
+      "name": "ニッセイSOX指数インデックスファンド(米国半導体株)",
+      "company": "ニッセイアセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "29314233"
+    },
+    {
+      "id": "tawara-gigatech7",
+      "name": "たわらノーロード フォーカス 米国超大型テクノロジー7",
+      "company": "アセットマネジメントOne",
+      "provider": "wealthadvisor",
+      "code": "47311263"
+    },
+    {
+      "id": "tracers-sp500-gold-plus",
+      "name": "Tracers S&P500ゴールドプラス",
+      "company": "アモーヴァ・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "02315228"
+    },
+    {
+      "id": "tracers-acwi-gold-plus",
+      "name": "Tracers MSCIオール・カントリー・ゴールドプラス",
+      "company": "アモーヴァ・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "02311263"
+    },
+    {
+      "id": "ifree-next-nasdaq100",
+      "name": "iFreeNEXT NASDAQ100インデックス",
+      "company": "大和アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "04317188"
+    },
+    {
+      "id": "tracers-nasdaq100-gold-plus",
+      "name": "Tracers NASDAQ100ゴールドプラス",
+      "company": "アモーヴァ・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "02311251"
+    },
+    {
+      "id": "smt-europe-momentum",
+      "name": "SMT 欧州株式モメンタムファンド",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "6431325C"
+    },
+    {
+      "id": "smt-japan-momentum",
+      "name": "SMT 日本株式モメンタムファンド",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "6431425C"
+    },
+    {
+      "id": "smt-china-momentum",
+      "name": "SMT 中国株式モメンタムファンド",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "6431525C"
+    },
+    {
+      "id": "etf-313a",
+      "name": "iシェアーズ S&P 500 トップ 20 ETF",
+      "company": "ブラックロック・ジャパン",
+      "provider": "yahoo_chart_etf",
+      "code": "313A.T"
+    },
+    {
+      "id": "etf-392a",
+      "name": "iシェアーズ NASDAQ トップ 30 ETF",
+      "company": "ブラックロック・ジャパン",
+      "provider": "yahoo_chart_etf",
+      "code": "392A.T"
+    },
+    {
+      "id": "etf-521a",
+      "name": "iFreeETF FANG+ゴールド",
+      "company": "大和アセットマネジメント",
+      "provider": "yahoo_chart_etf",
+      "code": "521A.T",
+      "start_date": "2026-03-11"
+    },
+    {
+      "id": "smt-developed-momentum",
+      "name": "SMT 先進国株式モメンタムファンド",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "64312266"
+    },
+    {
+      "id": "smt-global-momentum",
+      "name": "SMT 全世界株式モメンタムファンド",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "64313266"
+    },
+    {
+      "id": "smt-india-momentum",
+      "name": "SMT インド株式モメンタムファンド",
+      "company": "三井住友トラスト・アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "64311266"
+    },
+    {
+      "id": "auam-leverage-nasdaq100-unhedged",
+      "name": "auAMレバレッジNASDAQ100為替ヘッジ無し",
+      "company": "auアセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "AY311247"
+    },
+    {
+      "id": "nasdaq100-3x-bull",
+      "name": "NASDAQ100 3倍ブル",
+      "company": "大和アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "0431720A"
+    },
+    {
+      "id": "etf-soxl",
+      "name": "SOXL Direxion Daily Semiconductor Bull 3X Shares",
+      "company": "Direxion",
+      "provider": "yahoo_chart_etf",
+      "code": "SOXL"
+    },
+    {
+      "id": "ifree-leverage-fang-plus",
+      "name": "iFreeレバレッジ FANG+",
+      "company": "大和アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "04314208"
+    },
+    {
+      "id": "ifree-leverage-ztech20-2x",
+      "name": "iFreeレバレッジ Zテック20・2倍ブル",
+      "company": "大和アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "04315256"
+    },
+    {
+      "id": "auam-leverage-all-country",
+      "name": "auAMレバレッジ・オールカントリー(レバカン)",
+      "company": "auアセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "AY31125C"
+    },
+    {
+      "id": "ifree-leverage-sp500",
+      "name": "iFreeレバレッジ S&P500",
+      "company": "大和アセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "04315188"
+    },
+    {
+      "id": "japan-stocks-4-3x-bull",
+      "name": "日本株4.3倍ブル",
+      "company": "SBIアセットマネジメント",
+      "provider": "wealthadvisor",
+      "code": "8931317C"
+    }
+  ]
+}
