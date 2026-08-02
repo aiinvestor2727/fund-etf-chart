@@ -19,7 +19,7 @@ YAHOO_CHART_URL = "https://query1.finance.yahoo.com/v8/finance/chart/{code}?peri
 
 
 def load_config(path):
-    with path.open("r", encoding="utf-8") as handle:
+    with path.open("r", encoding="utf-8-sig") as handle:
         return json.load(handle)
 
 
