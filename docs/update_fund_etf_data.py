@@ -461,9 +461,38 @@ def main():
 
     config_path = BASE_DIR / args.config
     config = load_config(config_path)
-    funds = [build_fund(entry, index) for index, entry in enumerate(config["funds"])]
-    payload = {"updatedAt": dt.date.today().isoformat(), "funds": funds}
     output_path = BASE_DIR / config.get("output", "fund-data.json")
+    previous_payload = {}
+    previous_funds = {}
+
+    if output_path.exists():
+        try:
+            previous_payload = load_config(output_path)
+            previous_funds = {fund.get("id"): fund for fund in previous_payload.get("funds", [])}
+        except Exception as error:
+            print(f"Warning: could not read previous data: {error}")
+
+    funds = []
+    errors = []
+    for index, entry in enumerate(config["funds"]):
+        try:
+            fund = build_fund(entry, index)
+            print(f"Fetched: {fund['name']} ({fund.get('code') or fund.get('fund_cd') or fund['source']})")
+        except Exception as error:
+            previous = previous_funds.get(entry["id"])
+            if not previous:
+                raise
+            fund = previous
+            errors.append({"id": entry["id"], "name": entry["name"], "error": str(error)})
+            print(f"Warning: reused previous data for {entry['name']}: {error}")
+        funds.append(fund)
+
+    payload = {
+        "updatedAt": dt.date.today().isoformat(),
+        "funds": funds,
+        "fetchErrors": errors,
+        "previousUpdatedAt": previous_payload.get("updatedAt"),
+    }
 
     if args.dry_run:
         print(json.dumps(payload, ensure_ascii=False, indent=2)[:2000])
@@ -473,6 +502,8 @@ def main():
     with output_path.open("w", encoding="utf-8-sig") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
     print(f"Updated {len(funds)} funds: {output_path}")
+    if errors:
+        print(f"Completed with {len(errors)} reused fund(s).")
     if not args.no_embed_html:
         for html_path in embed_payload_in_html(payload):
             print(f"Embedded latest data: {html_path}")
